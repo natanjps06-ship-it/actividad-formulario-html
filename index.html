@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario Taller Web</title>
+</head>
+<body>
+
+<h1>Formulario de Inscripción</h1>
+
+<form action="#" method="post">
+
+    <fieldset>
+        <legend>Datos Personales</legend>
+
+        <label>Nombre:</label>
+        <input type="text" name="nombre" required minlength="3"><br><br>
+
+        <label>Correo:</label>
+        <input type="email" name="correo" placeholder="ejemplo@correo.com" required><br><br>
+
+        <label>Teléfono:</label>
+        <input type="tel" name="telefono" pattern="[0-9]{10}" placeholder="0999999999"><br><br>
+
+        <label>Edad:</label>
+        <input type="number" name="edad" min="4" max="99" required><br><br>
+
+        <label>Fecha de nacimiento:</label>
+        <input type="date" name="fecha"><br><br>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>Datos Académicos</legend>
+
+        <label>Carrera:</label>
+        <input type="text" name="carrera" required><br><br>
+
+        <label>Nivel académico:</label>
+        <select name="nivel" required>
+            <option value="">Seleccione</option>
+            <option>Bachillerato</option>
+            <option>Tecnológico</option>
+            <option>Universitario</option>
+        </select><br><br>
+
+        <label>Institución:</label>
+        <input type="text" name="institucion"><br><br>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>Preferencias</legend>
+
+        <p>Modalidad:</p>
+        <input type="radio" name="modalidad" value="presencial" required> Presencial
+        <input type="radio" name="modalidad" value="virtual"> Virtual
+        <input type="radio" name="modalidad" value="hibrida"> Híbrida
+
+        <p>Temas:</p>
+        <input type="checkbox" name="tema" value="html"> HTML
+        <input type="checkbox" name="tema" value="css"> CSS
+        <input type="checkbox" name="tema" value="js"> JavaScript
+
+        <br><br>
+
+        <label>Nivel:</label>
+        <select name="conocimiento">
+            <option>Básico</option>
+            <option>Intermedio</option>
+            <option>Avanzado</option>
+        </select><br><br>
+
+        <label>Color favorito:</label>
+        <input type="color" name="color"><br><br>
+
+        <label>Motivación:</label>
+        <input type="range" name="motivacion" min="1" max="10">
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>Disponibilidad</legend>
+
+        <label>Fecha de inicio:</label>
+        <input type="date" name="inicio"><br><br>
+
+        <label>Hora disponible:</label>
+        <input type="time" name="hora"><br><br>
+
+        <label>Jornada:</label>
+        <select name="jornada">
+            <option>Mañana</option>
+            <option>Tarde</option>
+            <option>Noche</option>
+        </select>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>Información Adicional</legend>
+
+        <label>Archivo:</label>
+        <input type="file" name="archivo"><br><br>
+
+        <label>Portafolio:</label>
+        <input type="url" name="portafolio" placeholder="https://ejemplo.com"><br><br>
+
+        <label>Comentarios:</label><br>
+        <textarea name="comentarios" rows="4" cols="40"></textarea>
+    </fieldset>
+
+    <br>
+
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Limpiar">
+
+</form>
+</body>
+</html>
